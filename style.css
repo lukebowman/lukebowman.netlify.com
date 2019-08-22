@@ -1,11 +1,28 @@
 body {
   width: 90vw;
   margin: auto;
-  background-color: hsla(215, 26%, 90%, 1);
   font-family: sans-serif;
-  color: hsla(0, 25%, 18%, 0.9);
+  color: hsla(0, 0%, 10%, 0.9);
 }
 
 a {
   text-decoration: none;
+}
+
+.button {
+  background-color: hsla(0, 0%, 100%, 0.6);
+  border: none;
+  padding: 1em 3em;
+  margin: 0 1em 1em 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  cursor: pointer;
+  -webkit-transition-duration: 0.25s; /* Safari */
+  transition-duration: 0.25s;
+}
+.button:hover {
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2),
+    0 15px 50px 0 rgba(0, 0, 0, 0.15);
 }
