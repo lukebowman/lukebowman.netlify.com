@@ -1,7 +1,6 @@
-function updateBackground() {
-  var body = document.body,
-    bstyle = body.style,
-    clock = document.querySelector(".clock");
+function colorChanger() {
+  var body = document.getElementById("colorChanger"),
+    bstyle = body.style;
   switch (new Date().getHours()) {
     case 0:
       bstyle.backgroundColor = "hsl(240, 75%, 75%)";
@@ -78,5 +77,5 @@ function updateBackground() {
   }
 }
 
-setInterval(updateBackground, 1000 * 60);
-updateBackground();
+setInterval(colorChanger, 1000 * 60);
+colorChanger();
