@@ -1,37 +1,39 @@
 body {
-  font-family: sans-serif;
+    font-family: sans-serif;
+    background-color: hsl(215, 50%, 75%);
 }
+
 .container {
-  margin: auto;
-  width: 100%;
-  padding: 0.5em 2em;
-  min-height: 98vh;
+    margin: auto;
+    width: 90%;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .button {
-  background-color: hsla(0, 0%, 100%, 0.6);
-  border: none;
-  padding: 1em 3em;
-  margin: 0 1em 1em 0;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1em;
-  cursor: pointer;
-  -webkit-transition-duration: 0.25s; /* Safari */
-  transition-duration: 0.25s;
+    background-color: hsla(0, 0%, 100%, 0.6);
+    border: none;
+    padding: 1em 2em;
+    margin: 0 1em 1em 0;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    cursor: pointer;
+    -webkit-transition-duration: 0.25s;
+    /* Safari */
+    transition-duration: 0.25s;
 }
+
 .button:hover {
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2),
-    0 15px 50px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2),
+        0 15px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 @media only screen and (max-width: 750px) {
-  .button {
-    width: 100%;
-  }
+    .button {
+        width: 100%;
+    }
 }
