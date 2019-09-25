@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Luke Bowman</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <!--<link rel="stylesheet" href="/styles.css" />-->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Crimson+Pro:200|Roboto+Mono:500&display=swap');
+
+        body {
+            background-color: hsl(225, 20%, 10%);
+            color: hsl(225, 20%, 70%);
+            font-size: 100%;
+            font-family: 'Crimson Pro', serif;
+            letter-spacing: .06em;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Roboto Mono', monospace;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: hsl(225, 20%, 50%);
+        }
+
+        a {
+            text-decoration: none;
+            color: hsl(225, 20%, 90%);
+        }
+
+        .container {
+            display: grid;
+            grid-template: auto auto auto 5em / repeat(9, 1fr);
+        }
+
+        header {
+            grid-area: 1/2/2/9;
+        }
+
+        nav {
+            grid-area: 2/2/3/9;
+            margin: 1em 0;
+        }
+
+        main {
+            grid-area: 3/2/4/9;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header>
+        <h1>Fox Jump</h1>
+    </header>
+    <nav>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </nav>
+    <main>
+        <h2>something</h2>
+        <h3>something else</h3>
+        <p>A paragraph of some text that has a variety of letters to test the forms of letters and xylophones.</p>
+    </main>
+
+</body></html>
