@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    color: hsla(0, 0%, 10%, 0.8);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+        grid-template-rows: auto 1fr auto;
+    }
+}
+
+header {
+    grid-column: span 3;
+    padding: 0 20px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+nav {
+    padding: 20px;
+}
+
+nav button {
+    min-width: 180px;
+    margin: 0 .5em .5em 0;
+    padding: 1em;
+    background-color: hsla(0, 20%, 85%, .8);
+    border: 0;
+}
+
+aside {
+    padding: 20px;
+}
+
+footer {
+    grid-column: span 3;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button {
+    border: none;
+    display: inline-block;
+    text-align: left;
+    cursor: pointer;
+    -webkit-transition-duration: 0.25s;
+    /* Safari */
+    transition-duration: 0.25s;
+}
+
+.button:hover {
+    box-shadow: 0 3px 3px -6px hsla(0, 0%, 0%, 0.5),
+        0 9px 9px -6px hsla(0, 0%, 0%, 0.4),
+        0 15px 15px -6px hsla(0, 0%, 0%, 0.3),
+        0 15px 15px -6px hsla(35, 85%, 85%, 0.3);
+}
