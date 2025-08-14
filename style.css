@@ -331,3 +331,16 @@ footer i {
         text-align: center;
     }
 }
+
+.value-box {
+  padding: 1.5rem; /* space inside box */
+  border-radius: 6px; /* slightly rounded corners */
+  background-color: #2d2d2d; /* dark background */
+  color: #ffffff; /* white text */
+  line-height: 1.5; /* improve readability */
+}
+
+.value-box p {
+  margin-bottom: 1rem; /* spacing between paragraphs */
+  text-align: left;
+}
